@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+  <link href="/normalize.css" rel="stylesheet">
+  <style>
+    header {
+      text-align: center;
+      background: url('https://ohiosinus.com/wp-content/uploads/2019/12/IMG_2533-1170x520-1.png');
+      background-size: cover;
+      color: white;
+    }
+    .nav2 {
+      display:none;
+    }
+      ul {
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+ 
+    nav {
+      height: 0px 
+     margin-bottom: 3px;
+    }
+    a {
+      color: cyan;
+      font-style: italic;
+    }
+    a:hover{
+      color: gold;
+    }
+    h1 {
+      font-size: 70px;
+      background: rgba(0,50,100,0.5);
+      border-radius: 100px 10px;
+    }
+    img {
+      margin: 40px 0px 0px 0px;
+      border: 7px double black;
+      border-radius: 20px;
+    }
+    ul {
+      padding: 10px;
+      background:rgba(0,50,100,0.5);
+    }
+    li {
+      display: inline;
+      padding: 0px 10px 0px 10px;
+      border: 3px solid gold;
+      border-radius: 100px;
+      margin: 0 20px 0 20px;
+    }
+    article {
+      max-width: 500px;
+      padding: 20px;
+      margin: 0 auto;
+    }
+    @media (max-width: 500px) {
+      nav{
+        display:none;
+      }
+      .nav2 {
+        display: block;
+      }
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+      li {
+        padding: 0px 10px 0px 10px;
+        display: block;
+         border: 0px none cyan;
+         height: 25px;
+      }
+      ul {
+        margin-top: 0px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+    </nav>
+    
+    <img src="https://styles.redditmedia.com/t5_17voet/styles/profileIcon_mv3rdx3vq5761.jpg?width=256&height=256&crop=256:256,smart&s=8e5150c942a964bd58bcd0ccef9858d251a52334">
+    <h1 class="heading">The Alex's Travels</h1>
+    
+    <div class="nav2">
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+    </nav>
+  
+  </header>
+  <article>
+    <h2>The Best Trip of my Life </h2>
+    
+    <p>It has been already more than 3 years since I've met a certain american tourist in Florence, Italy. We're gonna call her F. A lot of things happened since then, we started liking each other, we have been at many many dates together and what was supposed to be a short love story turned out to be a lifetime love story!<br>
+    When I saw F. flying away back to the States I knew that I had to follow her. </p>
+    <h4>  So I took a Plane Ticket!</h4>
+    <p>The flight was a nightmare. Dozens of people stacked in claustrophobic small seats for 10 hours, hardly edible food and a persistent headache were my trip companions. <br>
+    Not the best time of my life i gotta say but in my head I only had the picture of me and F being together again. </p>
+    <h4> The Arrival</h4>
+    <p>Finally the plane lands, i rush through the customs, i grab my luggage and there she is, F, waiting for me with a smile on her face.<br>
+    As happy as I could ever be, I hug her while she hugs me. For a time that could have been minutes or hours we stay there finally together before walking out of the airport, with my luggage on one hand and F's hand on the other I'm ready to visit New York City for the first time in my life. </p>
+    
+    <button class="likebutton">Like</button>
+    <button class="sharebutton">Share</button>
+  </article>
+  <script>
+    $(".likebutton").on("click", function() {
+      alert("Thank You for the Like!");
+    });
+     $(".sharebutton").on("click", function() {
+      alert("We're still working on it :)");
+    });
+  </script>
+</body>
