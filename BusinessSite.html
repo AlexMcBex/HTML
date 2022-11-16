@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<head>
+<title>Pizzeria Amalfi - Pizzas</title>
+<script src="/assets/jquery.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Merienda&display=swap" rel="stylesheet">
+<style>
+.selected {
+  color: gold;
+  border: 2px dotted gold;
+}
+  ul {
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.65);
+      text-align: center;
+      margin-bottom: 0;
+      border: 2px solid gold;
+    }
+    .nav {
+      border: 0px none;
+    }
+    li {
+      margin: 0 auto;
+      display: inline;
+      padding: 0px 10px 0px 10px;
+    }
+    a {
+      color: #C9E1FF;
+    }
+    a:hover {
+      color: gold;
+    }
+article {
+  background: rgba(0,0,0,0.65);
+  margin: 0 auto;
+  margin-top: 0;
+  height: 100%
+}
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: url("https://static2-viaggi.corriereobjects.it/wp-content/uploads/2015/06/COSTIERA-AMALFITANA-GETTY.jpg?v=136916");
+  background-size: cover;
+  background-attachment: fixed;
+}
+div {
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  margin: 10px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: 'Merienda', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: #C9E1FF;
+  margin: 0 0 10px 0;
+  padding: 40px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: #C9E1FF;
+  margin: 0px 0 40px 0;
+  font-size: 30px;
+  font-family: 'Caveat', cursive;
+  padding-bottom: 20px;
+}
+h3 {
+  width: 80px;
+  text-align: center;
+  color: #C9E1FF;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-family: 'Caveat', cursive;
+  padding: 3px;
+  border: 2px solid #C9E1FF;
+  border-radius: 12px;
+}
+p {
+  min-width: 580px;
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 105px;
+  margin: 0;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://media-cldnry.s-nbcnews.com/image/upload/t_focal-600x300,f_auto,q_auto:best/newscms/2017_49/1302554/chris-bianco-pizza-today-tease-171208.jpg");
+}
+.second{
+  background-image: url("https://st2.depositphotos.com/1054638/11418/i/450/depositphotos_114180414-stock-photo-pizza-mushrooms-white-plate.jpg");
+}
+.dessert{
+  background-image: url("https://cdn.falatozz.hu/kepek/new/063/63439/63439_ungherese-pizza_600x600.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+    background: rgba(0,0,0,0.6);
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 0px 0 30px 0;
+    background: rgba(0,0,0,0.6);
+    padding-top: 20px;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+    height: 200px
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+    min-width: 90%;
+  }
+  small {
+    font-size: 16px;
+  }
+  article {
+    background: rgba(0,0,0,0);
+  }
+  h3 {
+    background: rgba(0,0,0,0.75);
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+   <ul class="nav">
+      <li><a href="#">Appetizers</a></li>
+      <li><a href="#">Main Course</a></li>
+      <li class="selected">Pizzas</li>
+      <li><a href="#">Beverages</a></li>
+      <li><a href="#">Wines</a></li>
+    </ul>
+<article>
+<h1>Pizzeria Amalfi</h1>
+<h2>"Taste Naples in New York"</h2>
+<h3>Pizzas</h3>
+<div class="first">
+  <p><em>Pizza Margherita<span class="price">$17</span></em><br />
+  <small>Pizza with Tomato Sauce, Mozzarella Fiordilatte, Fresh Basil, Extra Virgin Olive Oil.  <br>
+"La Pizza classica, Leggendaria"
+ </small></p>
+</div>
+
+<div class="second">
+  <p><em>Pizza ai Funghi Porcini<span class="price">$22</span></em><br />
+  <small>Pizza with Tomato Sauce, Mozzarella di Bufala, Truffle Oil, Porcini Mushrooms and Oregano. <br>
+"Non so chi ha avuto questa idea ma chiunque sia è un genio!"</small></p>
+</div>
+  
+<div class="dessert">
+  <p><em>Pizza Calabrese <strong><span style="color: orange"> HOT</span></strong><span class="price">$26</span></em><br />
+  <small>Pizza with Tomato Sauce, Mozzarella Fiordilatte, Spicy Salamino Calabrese, Onion, Spicy Green Peppers, Spicy Oil. For spicy lovers. <br>
+  "Some like it Hot"</small></p>
+</div>
+    <ul>
+      <li><a href="#">Appetizers</a></li>
+      <li><a href="#">Main Course</a></li>
+      <li class="selected">Pizzas</li>
+      <li><a href="#">Beverages</a></li>
+      <li><a href="#">Wines</a></li>
+    </ul>
+</article>
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
