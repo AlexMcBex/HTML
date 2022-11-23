@@ -1,2 +1,2 @@
 # HTML
-## Excersises with HTML format files
+## Excercises with HTML format files
