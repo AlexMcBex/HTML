@@ -2,11 +2,22 @@
 <head>
   <title>Alessio Belli</title>
   <style>
+  
   img {
     border-radius: 50%;
     border: 5px solid gold;
     height: 300px;
     padding: 0;
+    margin: 20px;
+  }
+  .heading {
+    margin: 40px auto;
+    margin-bottom: 10px;
+    background: gold;
+    border-radius: 10px;
+    font-size:  80px;
+    color: black;
+    width: 497;
   }
    * {
      margin: 3px;
@@ -34,10 +45,6 @@
        font-style: italic;
      }
      
-    input[type="email"] {
-      width: 495px;
-    }
-    
     input[type="submit"] {
       background: red;
       color: white;
@@ -47,26 +54,47 @@
     .text {
       background: red;
       border-radius: 10px;
-      width: 495px;
-      margin: auto;
+      width: 497px;
+      position: relative;
+      margin: 0 auto;
       }
+      @media (max-width: 500px) {
+    img {
+      width: 75%;
+      height: 50%;
+      margin: 9px;
+      
+    }
+    .text {
+      width: 84%;
+    }
+    .heading {
+      font-size: 45px;
+      margin-bottom: 0px;
+      width: 84%;
+    }
+  }
+  
       
   </style>
 </head>
 <body>
+<h1 class="heading">Alex's Site</h1>
   <img src="https://media-exp1.licdn.com/dms/image/C5603AQGhPisZgKjfBg/profile-displayphoto-shrink_400_400/0/1650324933078?e=1673481600&v=beta&t=ljSKylXHuFB8Cveg3ueZ6TSnu2BjvGpSBtKICs61VL0" >
   <div class="text" display="flex">
-  <p>Hello! I'm Alex. I'm a Software Engineer based in New York City.</p>
+  <p>Hello! I'm Alex. <br>
+  I'm a Software Engineer based in NYC.</p>
   </div>
   
   <div class="inputdata">
   <input type="email" placeholder="Email">
+  <input type="text" placeholder="Username">
   <br>
   <input type="text" placeholder="First Name">
   <input type="text" placeholder="Last Name">
   <br>
-  <input type="text" placeholder="Username">
   <input type="password" placeholder="Password">
+  <input type="password" placeholder="Confirm Password">
   <br>
   <input type="submit">
   </div>
