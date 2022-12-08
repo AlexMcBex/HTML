@@ -1,0 +1,34 @@
+The GitHub Flow
+The workflow for contributing to an open-source product or your dev team’s project comprises the following steps:
+
+Forking
+Cloning
+Editing
+Adding/committing
+Pushing
+Submitting a pull request
+
+1) Forking
+    add someone's repo to your github account, the repo includes the code and 
+    the commit history.
+    every change committed to the copy doesn't affect the original repository
+2) Cloning
+    Cloning a repo will make it avaiable on your machine so you can work on it.
+    git clone https://url-to-clone
+    to copy the url on gitbash on windows the shortcuts are
+    ctrl + Ins instead of ctrl + C 
+    shift + Ins instead of ctrl + V
+3) Editing
+    Using a text editor to apply your edits to the code (check Atom or Sublime)
+4) Adding/committing
+    Update your repo with your changes
+5) Pushing
+    Update your remote repository with 
+    git push origin master
+    origin is a shortcut for the URL of the repository
+    master is the branch
+6) Submitting a pull request
+    this shares your changes with the owner of the original repo
+
+       
+$ git pull origin main  --allow-unrelated-histories
